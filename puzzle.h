@@ -58,6 +58,8 @@ template <typename T>
 void Puzzle<T>::play() {
   int row, col;
   int val;
+
+  print();
   while ( !checkWin() ) { // Only run while the game isn't complete
     // Receive input
     cout << "What row would you like to place in? ";
